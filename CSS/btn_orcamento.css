@@ -1,0 +1,52 @@
+.btn-orcamento {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  background-color: #F26E21; /* Laranja RGB */
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px; /* Pill Shape */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 6px 0px #c2410c, 0 8px 15px rgba(242, 110, 33, 0.35);
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-orcamento::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #136397; /* Azul RGB no hover */
+  border-radius: 999px;
+  z-index: -1;
+  transition: width 0.35s ease-in-out;
+}
+
+.btn-text {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-orcamento:hover {
+  box-shadow: 0 6px 0px #0e4b73, 0 10px 20px rgba(19, 99, 151, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-orcamento:hover::before {
+  width: 100%;
+}
+
+.btn-orcamento:active {
+  box-shadow: 0 2px 0px #0e4b73, 0 4px 8px rgba(19, 99, 151, 0.3);
+  transform: translateY(4px);
+}

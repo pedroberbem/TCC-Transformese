@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    justify-content: center;
+    
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+}
+
+
+.nav-items{
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav_logo{
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.nav-items:hover{
+    background-color: #fdf1f1;
+    border-radius: 900px;
+    box-shadow: .5px .5px 150px #252525;
+    color: #ba1f1f;
+}
+
