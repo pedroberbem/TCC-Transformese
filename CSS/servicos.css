@@ -1,0 +1,83 @@
+.container-footer{
+  background: radial-gradient(circle at 15% 30%, rgba(242, 110, 33, 0.45) 0%, rgb(13, 93, 142) 60%);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+}
+
+
+.logo_e_resumo{
+    max-width: 300px;
+}
+
+.logo_e_resumo img{
+    width: auto;
+    height: 48px;
+    margin-bottom: 20px;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+}
+
+.logo_e_resumo p {
+  color: #000; /* Cinza claro para leitura */
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Títulos de todas as colunas */
+.container-footer h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Colunas de Links */
+.nossos_servicos, 
+.institucional {
+  display: flex;
+  flex-direction: column;
+}
+
+.nossos_servicos a, 
+.institucional a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.92rem;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+/* Efeito ao passar o mouse nos links */
+.nossos_servicos a:hover, 
+.institucional a:hover {
+  color: #F26E21; /* Laranja da RGB */
+  transform: translateX(4px); /* Desliza suavemente para a direita */
+}
+
+/* Coluna de Contato */
+.contato {
+  max-width: 260px;
+}
+
+.contato-item {
+  color: #000;
+  font-size: 0.92rem;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+

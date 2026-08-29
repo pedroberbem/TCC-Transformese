@@ -31,9 +31,10 @@
 }
 
 .nav-items:hover{
-    background-color: #fdf1f1;
+    background-color: #136397;
     border-radius: 900px;
     box-shadow: .5px .5px 150px #252525;
-    color: #ba1f1f;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
