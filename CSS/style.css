@@ -10,4 +10,6 @@ html{
 body{
   background-color: #fdfdf7;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
