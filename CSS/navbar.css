@@ -6,7 +6,9 @@
     z-index: 4;
     width: 100%;
     position: fixed;
+    top: 0;
     background-color: #ffffff;
+    
 }
 
 .nav-links{

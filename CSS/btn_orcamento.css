@@ -40,6 +40,7 @@
 .btn-orcamento:hover {
   box-shadow: 0 6px 0px #0e4b73, 0 10px 20px rgba(19, 99, 151, 0.4);
   transform: translateY(-2px);
+
 }
 
 .btn-orcamento:hover::before {
