@@ -1,0 +1,154 @@
+.container-footer{
+  background: radial-gradient(circle at 15% 30%, rgba(242, 110, 33, 0.45) 0%, rgb(13, 93, 142) 60%);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000;
+  padding-top: 60px;
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+}
+
+
+.logo_e_resumo{
+    max-width: 300px;
+}
+
+.logo_e_resumo img{
+    width: auto;
+    height: 48px;
+    margin-bottom: 20px;
+    display: inline-block;
+    filter: brightness(0) invert(1);
+}
+
+.logo_e_resumo p {
+  color: #000; /* Cinza claro para leitura */
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Títulos de todas as colunas */
+.container-footer h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Colunas de Links */
+.nossos_servicos, 
+.institucional {
+  display: flex;
+  flex-direction: column;
+}
+
+.nossos_servicos a, 
+.institucional a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.92rem;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+/* Efeito ao passar o mouse nos links */
+.nossos_servicos a:hover, 
+.institucional a:hover {
+  color: #F26E21; /* Laranja da RGB */
+  transform: translateX(4px); /* Desliza suavemente para a direita */
+}
+
+/* Coluna de Contato */
+.contato {
+  max-width: 260px;
+}
+
+.contato-item {
+  color: #000;
+  font-size: 0.92rem;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.footer-divider{
+  border: none;
+  border-top: 1px solid #ffffff;
+  background-color: rgba(255,255,255,0.2);
+  margin: 20px ;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-bottom p{
+  margin: 20px;
+}
+
+.footer-socials{
+  display: flex;
+  gap: 12px;
+  margin: 20px;
+}
+
+.footer-socials i{
+  color: #fff;
+}
+
+.hover-text-wrap{
+  position: relative;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: -80px;
+  
+}
+
+.hover-text-base,
+.hover-text-fill{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hover-text-base{
+  color: transparent;
+  -webkit-text-stroke: 0.3px rgba(255,255,255,0.3)
+}
+
+.hover-text-fill{
+  color: transparent;
+  background: linear-gradient(to right, #F26E21,rgba(255, 255, 255, 0.4), rgb(13, 93, 142));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-mask-image: radial-gradient(circle 120px at var(--mx, 50%) var(--my, 50%), black 0%, transparent 100%);
+  mask-image: radial-gradient(circle 120px at var(--mx, 50%) var(--my, 50%), black 0%, transparent 100%);
+  
+}

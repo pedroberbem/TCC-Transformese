@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container-formulario">
+
+        <div class="map-wrapper">
+            <iframe class="map-iframe"
+                src="https://maps.google.com/maps?q=S%C3%A3o+Paulo,+SP&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                title="Mapa de Atendimento - São Paulo SP">
+            </iframe>
+
+            <div class="white-info-card">
+                <div class="info-col">
+                    <span class="info-title">ÁREA DE ATENDIMENTO</span>
+                    <p class="info-text">Atendemos em toda a região de São Paulo e municípios vizinhos diretamente no
+                        seu local.</p>
+                </div>
+                <div class="info-col">
+                    <div class="info-group">
+                        <span class="info-title">EMAIL</span>
+                        <a href="mailto:contato@rgbele.com.br" class="info-link">contato@rgbele.com.br</a>
+                    </div>
+                    <div class="info-group">
+                        <span class="info-title">TELEFONE / WHATSAPP</span>
+                        <p class="info-text">(11) 99999-9999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="container-contato">
+            <h2 class="formulario-titulo">Solicitar Orçamento</h2>
+            <p class="formulario-subtitulo">Preencher os campos abaixo e entraremos em contato</p>
+
+            <form>
+                <div class="grupo-formulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" required placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="Digite seu email">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" required placeholder="Descreva o serviço que você precisa"></textarea>
+                </div>
+
+                <button type="submit" class="btn-form">SOLICITAR ORÇAMENTO</button>
+            </form>
+
+        </section>
+    </section>
+</body>
+
+</html>
