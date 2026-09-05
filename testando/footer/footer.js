@@ -2,8 +2,6 @@ let varfooter = document.querySelector(".hover-text-wrap")
 
 let varfill = document.querySelector(".hover-text-fill")
 
-
-
 let varContainer = document.querySelector(".container-footer")
 
 varContainer.addEventListener('mousemove', function(parameter){
