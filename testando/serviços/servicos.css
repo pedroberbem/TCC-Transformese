@@ -1,0 +1,51 @@
+.servicos{
+    position: relative;
+    background: radial-gradient(circle at 15% 30%, rgba(242, 110, 33, 0.45) 0%, rgb(13, 93, 142) 60%);
+    padding:  20px 20px 50px 20px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.servico-item{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.servico-passo{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: rotate(-4deg);
+    position: relative;
+}
+
+.passo-numero{
+    font-size: 28px;
+    font-weight: 700;
+    color: #F26E21;
+    margin: 0;
+}
+
+.passo-texto{
+    font-size: 14px;
+    color: #555;
+}
+
+.servico-passo i{
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    color: #F26E21;
+    transform: rotate(-15deg);
+}
+
+.servico-media{
+    width: 150px;
+    height: 150px;
+    background: #12212E;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.05)
+    
+}

@@ -150,5 +150,9 @@
   -webkit-text-fill-color: transparent;
   -webkit-mask-image: radial-gradient(circle 120px at var(--mx, 50%) var(--my, 50%), black 0%, transparent 100%);
   mask-image: radial-gradient(circle 120px at var(--mx, 50%) var(--my, 50%), black 0%, transparent 100%);
-  
+
+}
+
+.letter{
+  display: inline-block;
 }
