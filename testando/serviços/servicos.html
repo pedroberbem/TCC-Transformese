@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <link rel="stylesheet" href="servicos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
     <section class="servicos">
-        <div class="servico-item">
+        <svg class="linha-servico" viewBox="0 0 707 455" xmlns="http://www.w3.org/2000/svg">
+            <line x1="100" y1="100" x2="500" y2="400" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-dasharray="6 6"></line>
+        </svg>
+        <div class="servico-item servico-item-esquerda">
             <div class="servico-passo">
                 <p class="passo-numero">01</p>
                 <i class="fa-solid fa-thumbtack"></i>
@@ -18,10 +23,10 @@
                 </h4>
                 <p class="passo-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
-            
+
             <div class="servico-media"></div>
         </div>
-        <div class="servico-item">
+        <div class="servico-item servico-item-direita">
             <div class="servico-passo">
                 <p class="passo-numero">02</p>
                 <i class="fa-solid fa-thumbtack"></i>
@@ -34,4 +39,5 @@
     </section>
     <script src="servicos.js"></script>
 </body>
+
 </html>

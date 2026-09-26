@@ -4,12 +4,29 @@
     padding:  20px 20px 50px 20px;
     overflow: hidden;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .servico-item{
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.servico-item:hover{
+    transform: translate(-3px, -3px);
+    transition: all 0.40s ease-out;
+}
+
+.servico-item-esquerda{
+    align-self: flex-start;
+
+}
+
+.servico-item-direita{
+    align-self: flex-end;
 }
 
 .servico-passo{
@@ -19,6 +36,7 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
     transform: rotate(-4deg);
     position: relative;
+    z-index: 2;
 }
 
 .passo-numero{
@@ -46,6 +64,17 @@
     height: 150px;
     background: #12212E;
     border-radius: 16px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.05)
-    
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.05);
+    position: relative;
+    z-index: 2;
+}
+
+.linha-servico{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
 }
