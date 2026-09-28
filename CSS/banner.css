@@ -1,0 +1,96 @@
+.hero-banner {
+  position: relative;
+  background-image: url(../Imagens/Banner-placeholder.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Impede que a sombra vaze da tela */
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 45%;  
+  left: 35%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  animation: luzCrescente 4s ease-out forwards;
+}
+
+.hero-banner .palavras {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  
+  opacity: 0;
+  animation: aparecerTexto 2s 2.2s ease-out forwards;
+}
+
+
+@keyframes luzCrescente {
+  0%, 5% {
+    width: 0; height: 0;
+    box-shadow: 0 0 0 0 rgba(255, 100, 0, 0), 0 0 0 200vmax rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
+  }
+  
+  8% {
+    width: 15px; height: 15px;
+    box-shadow: 0 0 30px 10px rgba(255, 100, 0, 0.8), 0 0 15px 200vmax rgba(0, 0, 0, 0.98);
+    background-color: rgba(255, 150, 50, 1);
+  }
+
+  11% { 
+    width: 0; height: 0;
+    box-shadow: 0 0 0 0 rgba(255, 100, 0, 0), 0 0 0 200vmax rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  18% {
+    width: 25px; height: 25px;
+    box-shadow: 0 0 50px 20px rgba(255, 200, 100, 1), 0 0 25px 200vmax rgba(0, 0, 0, 0.95);
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  22% { 
+    width: 0; height: 0;
+    box-shadow: 0 0 0 0 rgba(255, 100, 0, 0), 0 0 0 200vmax rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+
+  28% {
+    width: 30px; height: 30px;
+    box-shadow: 0 0 80px 40px rgba(255, 220, 100, 1), 0 0 40px 200vmax rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+
+  100% {
+    width: 180vmax; height: 180vmax;
+    box-shadow: 0 0 100px 0 rgba(255, 220, 100, 0), 0 0 200px 200vmax rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+}
+@keyframes aparecerTexto {
+  0% { 
+    opacity: 0; 
+    transform: translateY(30px);
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
