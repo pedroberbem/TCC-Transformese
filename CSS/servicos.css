@@ -23,12 +23,47 @@
     z-index: 1;
 }
 
-/* textt-banner */
+/* textO-banner */
 .servicos-hero-text{
     display: inline-block;
     margin-bottom: 12px;
     color: #ff9a59;
     font-weight: 700;
-    letter-spacing: .12rem;
+    letter-spacing: .12em;
     text-transform: uppercase;
 }
+
+/*Cor e posição Titulo*/
+.servicos-hero h1{
+    margin: 0;
+    color: #fff;
+    font-size: clamp(.2.4rem, 5vw, .4rem);
+}
+
+/*Cor e espaçamento Serviços*/
+.servicos-hero h1 span{
+    margin-left: .2em;
+    color: #ff9a59;
+}
+
+/*paragrafo*/
+.servicos-hero p{
+    margin: 16px 0 0;
+    color: #fff;
+}
+
+/*simbolo*/
+.servicos-hero symbol{
+    position: absolute;
+    right: 12%;
+    bottom: 5%;
+    color: rgba(255, 255, 255, 08);
+    font-size: clamp(8rem, 22vw, 18rem);
+    font-weight: 800;
+}
+
+/*titulo e introdução*/
+.servucis-sectuion{
+    max-width: 1180px;
+}
+
