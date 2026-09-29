@@ -1,22 +1,53 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(25, 95%, 52%);
+  --first-color-alt: hsl(25, 95%, 48%);
+  --white-color: hsl(0, 0%, 98%);
+  --black-color: hsl(0, 0%, 5%);
+  --body-color: hsl(0, 0%, 0%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Syne", sans-serif;
+  --biggest-font-size: 2.375rem;
+  --normal-font-size: .938rem;
+}
+
+
+body{
+    background-color: #ffffff;
+}
 .titlu{
     margin-top: 65px;
 }
 .fundao{
-
+    padding: 0;
+    margin: 0;
     align-items: center;    
+    justify-content: center;
+    justify-items: center;
     width: 100%;
     height: 100%;
-    background-color: #0e4b73;
+    background-color: #ffffff;
 }
 .bloco1 {
-    margin-top: 150px;
+    padding: 0;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     GAP: 100px;
     margin-left: 50px;
 }
 .zezindopente{
-    background-color: #ff9a59;
+    background-color: #E59866;
     Width: 900px;
     border-radius: 15px;
     color: #fff;
@@ -32,4 +63,25 @@
     align-items: center;
     GAP: 100px;
     margin-left: 50px;
+}
+.amamosbanner{
+    background-image: url(../Imagens/PLACEHOLDERZASSO.png);
+   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulozasso{
+    display: flex;
+    font-family: var(--body-font);
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
 }
