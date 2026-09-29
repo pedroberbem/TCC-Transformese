@@ -1,6 +1,6 @@
 .servicos-page{
-    --azul:var(--azul);
-    --laranja: #f2e21;
+    --azul: #136397;
+    --laranja: #F26F21;
     --texto: #263746;
     --texto-suave: #657482;
 
@@ -63,7 +63,126 @@
 }
 
 /*titulo e introdução*/
-.servucis-sectuion{
+.servicos-section{
     max-width: 1180px;
+    margin: 0 auto 42px;
+    padding: 80px 24px;
 }
 
+.servicos-intro{
+    max-width: 680px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+/*texto superior e inferior estelização padronizada*/
+.servicos-atributo,
+.servicos-etiqueta{
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--laranja);
+    font-size: .78rem;
+    font-weight: 700px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+/*superior e inferior estelização padronizada*/
+.servicos-intro h2, 
+.servicos-cntt h2{
+    margin: 0;
+    color: var(--azul);
+    font-size: clamp(1.8rem. 3vw, 2.5rem);
+}
+
+/*sup e inferio estelização padronizada*/
+.servicos-intro p,
+.servicos-cntt p{
+    color: var(--texto-suave);
+    line-height: 1.7;
+}
+
+/*cards*/
+.servicos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.servicos-card{
+    overflow: hidden;
+    border-radius: 1px solid #e6df1e;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(23, 58, 79, .06);
+    transition: 22.s
+}
+
+.servicos-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 16px 3px rgba(23, 58, 79, .12);
+}
+
+.servicos-card-image{
+    display: grid;
+    min-height: 210px;
+    place-items: center;
+    background:linear-gradient(145deg, #eaf2f7, #dce8ef)
+}
+
+.servicos-card-image span{
+    color: rgba(19, 99, 151, 48);
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.servicos-card-body{
+    padding: 30px;
+}
+
+.servicos-card-num{
+    color: var(--laranja);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+.servicos-card h3{
+    color: var(--azul);
+    font-size: 1.50rem;
+}
+
+.servicos-card p{
+    min-height: 78px;
+    color: var(--texto);
+    font-size: .95rem;
+    line-height: 1.65;
+}
+
+.servicos-card-link{
+    display: inline-flex;
+    gap: 8px;
+    color: var(--azul);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.servicos-card-link span{
+    color: var(--laranja);
+}
+
+.servicos-card-link:hover{
+    color: var(--laranja);
+}
+
+.servicos-cntt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    max-width: 1180px;
+    margin: 0 auto 72px;
+    padding: 34px 40px;
+    border-radius: 14px;
+    background: #f5f8fa;
+}
