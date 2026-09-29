@@ -1,109 +1,37 @@
 .container-formulario {
     display: flex;
-    width: 100%;
-    padding: 10px;
-    gap: 1rem;
-    padding: 1.5rem;
-    background-color: #ffffff;
-    border-radius: 16px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    background: radial-gradient(circle at 15% 30%, rgba(242, 110, 33, 0.45) 0%, rgb(13, 93, 142) 60%);
 }
-
-
-.map-wrapper {
-  position: relative;
-  flex: 1.2;
-  min-height: 450px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.map-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Card Branco no rodapé do mapa (2 colunas) */
-.white-info-card {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  right: 16px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 1.25rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-}
-
-
-
-.info-title {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #111827;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.info-text {
-  font-size: 0.85rem;
-  color: #4b5563;
-  line-height: 1.4;
-}
-
-.info-link {
-  font-size: 0.85rem;
-  color: #4f46e5;
-  text-decoration: none;
-}
-
-.info-link:hover {
-  text-decoration: underline;
-}
-
-.info-group {
-  margin-bottom: 0.5rem;
-}
-
-.info-group:last-child {
-  margin-bottom: 0;
-}
-
 
 /*Formulario contato*/
 
 .container-contato {
-    flex: 0.8;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 2.5rem 2rem;
+  flex: 0.8;
+  border-radius: 16px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
 }
 
 .formulario-titulo{
-    color: #000;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1px;
 }
 
 .formulario-subtitulo{
-    color: #6b7280;
+    color: rgba(255,255,255,0.7);
     font-size: 0.85rem;
     margin-bottom: 1.5rem;
     line-height: 1.4;
@@ -116,7 +44,7 @@
 .grupo-formulario label{
     display: block;
     font-size: 0.875rem;
-    color: #111827;
+    color: rgba(255,255,255,0.9);
     margin-bottom: 6px;
     font-weight: 700;
     margin-bottom: 8px;
@@ -195,4 +123,77 @@
 
 .btn-form:hover::before {
   width: 100%;
+}
+
+/*Configurações lampada*/
+.lamp-wrapper{
+  position: relative;
+  width: 300px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lamp-cord{
+  width: 2px;
+  height: 80px;
+  background:rgba(255,255,255,0.4);
+}
+
+.lamp-shade{
+  width: 120px;
+  height: 50px;
+  background-color: #1a1a1a;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+}
+
+.lamp-glow{
+  position: absolute;
+  top: 76px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffd98a;
+  box-shadow: 0 0 30px 14px rgba(255, 200, 100, 0.7);
+}
+
+.lamp-cone{
+  position: absolute;
+  top: 108px;
+  width: 220px;
+  height: 140px;
+  background: radial-gradient(ellipse at top, rgba(255, 200, 100, 0.55) 0%, rgba(255, 200, 100, 0.15) 45%, transparent 75%);
+  clip-path: polygon(38% 0%, 62% 0%, 100% 100%, 0% 100%);
+}
+
+.lamp-glow, .lamp-cone{
+  opacity: 0;
+}
+
+@keyframes acender {
+  0%   { opacity: 0; }
+  20%  { opacity: 1; }
+  35%  { opacity: 0.4; }
+  50%  { opacity: 0.9; }
+  70%  { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes acenderAmbiente {
+  0%   { filter: brightness(0.75); }
+  20%  { filter: brightness(0.95); }
+  35%  { filter: brightness(0.82); }
+  50%  { filter: brightness(0.93); }
+  70%  { filter: brightness(0.75); }
+  100% { filter: brightness(1); }
+}
+
+.container-formulario.acesa{
+  animation: acenderAmbiente 1.5s ease-in-out forwards;
+}
+
+.container-formulario.acesa .lamp-glow,
+.container-formulario.acesa .lamp-cone{
+  animation: acender 1.5s ease-in-out forwards;
 }

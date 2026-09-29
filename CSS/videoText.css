@@ -1,0 +1,49 @@
+.container__loop{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.container__loop video{
+    width: 100%;
+    height: 100%;
+}
+
+.text-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+}
+
+.capitulo{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.capitulo-2, .capitulo-3{
+    background: radial-gradient(circle at 15% 30%, rgba(242, 110, 33, 0.45) 0%, rgb(13, 93, 142) 60%)
+}
+
+.capitulo-1{ z-index: 1; }
+.capitulo-2{ z-index: 2; }
+.capitulo-3{ z-index: 3; }
+
+
+.capitulo-gatilho{
+  height: 30vh;
+}

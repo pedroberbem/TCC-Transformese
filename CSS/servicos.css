@@ -92,7 +92,7 @@
 .servicos-cntt h2{
     margin: 0;
     color: var(--azul);
-    font-size: clamp(1.8rem. 3vw, 2.5rem);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
 }
 
 /*sup e inferio estelização padronizada*/

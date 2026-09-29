@@ -12,29 +12,105 @@
     <link rel="stylesheet" href="../CSS/btn_flutuante_whatsapp.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <!--Logo-->
-            <a href="../index.html">
-                <img class="nav_logo" src="../Imagens/rgb-logo-horizontal.png"
-                    alt="Logo RGB Instalações e Manutenções Elétricas">
+     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../Imagens/teste 4.png" alt=""></i>
             </a>
-            <!--Outras paginas-->
-            <a href="../index.html" class="nav-items">HOME</a>
-            <a href="../HTML/quemSomos.html" class="nav-items">QUEM SOMOS</a>
-            <a href="../HTML/servicos.html" class="nav-items">NOSSOS SERVIÇOS</a>
-            <a href="../HTML/paginaOrcamento.html" class="btn-orcamento">SOLICITAR ORÇAMENTO</a>
-        </ul>
-    </nav>
 
-    <H1 class="titlu"> Nóis é pik, e o resto é buraco ladrão</H1>
-    <p> é o sorriso ronaldo que chegou, é o sorriso ronalduuuh</p>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="../index.html" class="nav__link ">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html" class="nav__link ">Nossos Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="quemSomos.html" class="nav__link ">Quem Somos</a>
+                    </li>
+
+                    <li>
+                        <a href="paginaOrcamento.html" class="nav__link btn-orcamento">Solicitar Orçamento</a>
+                    </li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home">
+            <img src="../Imagens/gradiente 3.png" alt="" class="home__bg">
+
+            <div class="home__boxes">
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+            </div>
+
+            <div class="home__container container">
+                <div class="home__data">
+                    <i class="ri-lightbulb-flash-line home__icon"></i>
+                    <h1 class="home__title">RGB soluções eletricas</h1>
+                    <p class="home__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex, modi sint officiis ut
+                        similique nihil quos ullam alias maiores architecto natus ab, consequuntur provident optio
+                        numquam animi molestiae blanditiis?
+                    </p>
+
+                    <div class="home__buttons">
+                        <a href="#" class="home__button">Apply for Beta</a>
+                        <a href="#" class="home__button home__button-ghost">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
     <footer class="container-footer">
+        <img src="../Imagens/gradiente 3.png" alt="" class="footer__bg">
+        <div class="footer__boxes">
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+        </div>
         <div class="footer-content">
             <div class="logo_e_resumo">
                 <a href="../index.html">
@@ -42,8 +118,7 @@
                         alt="Logo RGB Instalações e Manutenções Elétricas">
                 </a>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Minima iusto nam ducimus, provident
-                    possimus autem tempore deserunt <br> optio aperiam dolorem perspiciatis explicabo cumque sed
-                    quia
+                    possimus autem tempore deserunt <br> optio aperiam dolorem perspiciatis explicabo cumque sed quia
                     incidunt voluptatum consequatur perferendis nulla.</p>
             </div>
             <div class="nossos_servicos">
@@ -92,7 +167,7 @@
         </div>
 
     </footer>
-    <script src="../JS/footer.js"></script>
+    
 
 
     <!-- Botão Flutuante do WhatsApp -->
@@ -104,7 +179,8 @@
             </path>
         </svg>
     </a>
-
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/nav__banner.js"></script>
 </body>
 
 </html>

@@ -13,51 +13,98 @@
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../CSS/formulario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <!--Barra de Navegação-->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <!--Logo-->
-            <a href="../index.html">
-                <img class="nav_logo" src="../Imagens/rgb-logo-horizontal.png"
-                    alt="Logo RGB Instalações e Manutenções Elétricas">
+     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../Imagens/teste 4.png" alt=""></i>
             </a>
-            <!--Outras paginas-->
-            <a href="../index.html" class="nav-items">HOME</a>
-            <a href="../HTML/quemSomos.html" class="nav-items">QUEM SOMOS</a>
-            <a href="../HTML/servicos.html" class="nav-items">NOSSOS SERVIÇOS</a>
-            <a href="../HTML/paginaOrcamento.html" class="btn-orcamento">SOLICITAR ORÇAMENTO</a>
-        </ul>
 
-    </nav>
-    
-    <section class="container-formulario">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="../index.html" class="nav__link ">Home</a>
+                    </li>
 
-        <div class="map-wrapper">
-            <iframe class="map-iframe"
-                src="https://maps.google.com/maps?q=S%C3%A3o+Paulo,+SP&t=&z=11&ie=UTF8&iwloc=&output=embed"
-                title="Mapa de Atendimento - São Paulo SP">
-            </iframe>
+                    <li>
+                        <a href="servicos.html" class="nav__link ">Nossos Serviços</a>
+                    </li>
 
-            <div class="white-info-card">
-                <div class="info-col">
-                    <span class="info-title">ÁREA DE ATENDIMENTO</span>
-                    <p class="info-text">Atendemos em toda a região de São Paulo e municípios vizinhos diretamente no
-                        seu local.</p>
-                </div>
-                <div class="info-col">
-                    <div class="info-group">
-                        <span class="info-title">EMAIL</span>
-                        <a href="mailto:contato@rgbele.com.br" class="info-link">contato@rgbele.com.br</a>
-                    </div>
-                    <div class="info-group">
-                        <span class="info-title">TELEFONE / WHATSAPP</span>
-                        <p class="info-text">(11) 99999-9999</p>
+                    <li>
+                        <a href="quemSomos.html" class="nav__link ">Quem Somos</a>
+                    </li>
+
+                    <li>
+                        <a href="paginaOrcamento.html" class="nav__link btn-orcamento">Solicitar Orçamento</a>
+                    </li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home">
+            <img src="../Imagens/gradiente 3.png" alt="" class="home__bg">
+
+            <div class="home__boxes">
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+                <div class="home__box"></div>
+            </div>
+
+            <div class="home__container container">
+                <div class="home__data">
+                    <i class="ri-lightbulb-flash-line home__icon"></i>
+                    <h1 class="home__title">RGB soluções eletricas</h1>
+                    <p class="home__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex, modi sint officiis ut
+                        similique nihil quos ullam alias maiores architecto natus ab, consequuntur provident optio
+                        numquam animi molestiae blanditiis?
+                    </p>
+
+                    <div class="home__buttons">
+                        <a href="#" class="home__button">Apply for Beta</a>
+                        <a href="#" class="home__button home__button-ghost">Learn More</a>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <section class="container-formulario">
+
+        <div class="lamp-wrapper">
+            <div class="lamp-cord"></div>
+            <div class="lamp-shade"></div>
+            <div class="lamp-glow"></div>
+            <div class="lamp-cone"></div>
         </div>
 
 
@@ -65,20 +112,26 @@
             <h2 class="formulario-titulo">Solicitar Orçamento</h2>
             <p class="formulario-subtitulo">Preencher os campos abaixo e entraremos em contato</p>
 
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="bb0d2807-3f85-4d67-b109-12ff6352b318">
                 <div class="grupo-formulario">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" required placeholder="Digite seu nome completo">
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
                 </div>
 
                 <div class="grupo-formulario">
                     <label for="email">Email</label>
-                    <input type="email" id="email" required placeholder="Digite seu email">
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone com DDD">
                 </div>
 
                 <div class="grupo-formulario">
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" required placeholder="Descreva o serviço que você precisa"></textarea>
+                    <textarea id="mensagem" name="mensagem" placeholder="Descreva o serviço que você precisa"></textarea>
                 </div>
 
                 <button type="submit" class="btn-form">SOLICITAR ORÇAMENTO</button>
@@ -87,8 +140,18 @@
         </section>
     </section>
 
-
     <footer class="container-footer">
+        <img src="../Imagens/gradiente 3.png" alt="" class="footer__bg">
+        <div class="footer__boxes">
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+            <div class="footer__box"></div>
+        </div>
         <div class="footer-content">
             <div class="logo_e_resumo">
                 <a href="../index.html">
@@ -96,8 +159,7 @@
                         alt="Logo RGB Instalações e Manutenções Elétricas">
                 </a>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Minima iusto nam ducimus, provident
-                    possimus autem tempore deserunt <br> optio aperiam dolorem perspiciatis explicabo cumque sed
-                    quia
+                    possimus autem tempore deserunt <br> optio aperiam dolorem perspiciatis explicabo cumque sed quia
                     incidunt voluptatum consequatur perferendis nulla.</p>
             </div>
             <div class="nossos_servicos">
@@ -146,7 +208,9 @@
         </div>
 
     </footer>
-    <script src="../JS/footer.js"></script>
+
+    </footer>
+    
 
     <!-- Botão Flutuante do WhatsApp -->
     <a href="https://api.whatsapp.com/send?l=pt&phone=5511921127752" class="whatsapp_float" target="_blank"
@@ -157,6 +221,9 @@
             </path>
         </svg>
     </a>
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/nav__banner.js"></script>
+    <script src="../JS/formulario.js"></script>
 </body>
 
 </html>
