@@ -192,3 +192,27 @@
   box-shadow: inset 0 2px 4px hsla(0, 0%, 100%, .15);
   backdrop-filter: blur(50px);
 }
+
+@media (width<=1150px){
+  .hover-text-base,
+  .hover-text-fill {
+    font-size: 130px;
+  }
+
+  .hover-text-wrap{
+    height: 100px;
+    margin-top: -50px;
+  }
+}
+
+@media (width<=540px){
+  .hover-text-base,
+  .hover-text-fill{
+    font-size: 70px;
+  }
+
+  .hover-text-wrap{
+    height: 70px;
+    margin-top: -30px;
+  }
+}
