@@ -4,7 +4,7 @@
   color: rgba(255,255,255,0.85);
   padding-top: 60px;
   width: 100%;
-  margin: 20px auto;
+  margin:  auto;
   overflow: hidden;
   position: relative;
 }
@@ -12,7 +12,7 @@
 .footer-content{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px 50px 20px;
+    padding: 0 20px 20px 20px;
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -20,8 +20,6 @@
     font-size: 0.95rem;
     position: relative;
     z-index: 2;
-     
-   
 }
 
 
@@ -92,9 +90,9 @@
   border: none;
   border-top: 1px solid #ffffff;
   background-color: rgba(255,255,255,0.85);
-  margin: 20px ;
+  margin: 10px ;
   position: relative;
-    z-index: 2;
+  z-index: 2;
 }
 
 .footer-bottom{
