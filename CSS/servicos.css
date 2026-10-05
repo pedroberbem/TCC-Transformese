@@ -124,10 +124,34 @@
 }
 
 .servicos-card-image{
-    display: grid;
-    min-height: 210px;
-    place-items: center;
-    background:linear-gradient(145deg, #eaf2f7, #dce8ef)
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #136397;
+}
+
+.servicos-card-image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.servicos-card-image::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 30, 50, 0.25),
+        rgba(19, 99, 151, 0.45)
+    );
+    transition: opacity 0.4s ease;
+}
+
+.servicos-card:hover .servicos-card-image::after {
+    opacity: 0.75;
 }
 
 .servicos-card-image span{
