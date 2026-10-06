@@ -23,7 +23,8 @@
 
 
 body{
-    background-color: #ffffff;
+    background-color: #ffffff ;
+
 }
 .titlu{
     margin-top: 65px;
@@ -37,9 +38,13 @@ body{
     width: 100%;
     height: 100%;
     background-color: #ffffff;
+     position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .bloco1 {
-    padding: 0;
+    padding: 50px;
     margin-top: 0px;
     display: flex;
     align-items: center;
@@ -47,18 +52,20 @@ body{
     margin-left: 50px;
 }
 .zezindopente{
-    background-color: #E59866;
-    Width: 900px;
+    Width: 700px;
     border-radius: 15px;
-    color: #fff;
+    color: #4A5568;
     padding: 20px;
-    
+    font-family: var(--body-font);
+    font-size: 30px;
 }
 .zezindopente2{
-    width: 300px;
+    width: 500px;
+    border-radius: 15px;
 }
 .bloco2 {
-    margin-top: 150px;
+  padding: 50px;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     GAP: 100px;
@@ -80,10 +87,14 @@ body{
 }
 .titulozasso{
     display: flex;
+    color: hsl(25, 95%, 52%);
     font-family: var(--body-font);
+    font-size: 25px;
     justify-content: center ;
     align-items: center;
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .amamostitulo{
