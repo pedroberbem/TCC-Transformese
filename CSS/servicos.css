@@ -104,18 +104,20 @@
 
 /*cards*/
 .servicos-grid{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
 }
 
 .servicos-card{
-    overflow: hidden;
-    border-radius: 1px solid #e6df1e;
-    border-radius: 14px;
-    background: #fff;
-    box-shadow: 0 8px 24px rgba(23, 58, 79, .06);
-    transition: 22.s
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none
 }
 
 .servicos-card:hover{
@@ -124,11 +126,15 @@
 }
 
 .servicos-card-image{
+    grid-column: 2;
+    grid-row: 1;
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     background: #136397;
+    border-radius: 14px;
+    background: #00060a;;
 }
 
 .servicos-card-image img{
