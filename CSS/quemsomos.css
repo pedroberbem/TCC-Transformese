@@ -1,3 +1,253 @@
-.titlu{
-    margin-top: 65px;
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  --first-color: hsl(25, 95%, 52%);
+  --first-color-alt: hsl(25, 95%, 48%);
+  --white-color: hsl(0, 0%, 98%);
+  --black-color: hsl(0, 0%, 5%);
+  --body-color: hsl(0, 0%, 0%);
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Syne", sans-serif;
+  --biggest-font-size: 2.375rem;
+  --normal-font-size: .938rem;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.titlu {
+  margin-top: 65px;
+}
+
+.fundao {
+  padding: 0;
+  margin: 0;
+  align-items: center;    
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bloco1, .bloco2 {
+  padding: 50px;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-left: 50px;
+}
+
+.zezindopente {
+  width: 700px;
+  max-width: 100%;
+  border-radius: 15px;
+  color: #4A5568;
+  padding: 20px;
+  font-family: var(--body-font);
+  font-size: 30px;
+}
+
+.zezindopente2 {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.amamosbanner {
+  background-image: url(../Imagens/508151012e103dfe908e5523f667225c.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulozasso {
+  display: flex;
+  color: hsl(25, 95%, 52%);
+  font-family: var(--body-font);
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.amamostitulo {
+  display: block;
+  font-size: clamp(1.2rem, 4vw, 2.5rem); /* Ajuste fluido para celular e PC */
+  font-weight: 700;
+  width: 30.5ch;
+  overflow: hidden;
+  color: #000000;
+  white-space: nowrap;
+  box-shadow: 1rem 0 0 #f1e100;
+  animation: mark .5s step-end infinite alternate, write 3s steps(22,end);
+}
+
+@keyframes write { 0% {width: 0} }
+@keyframes mark { 50% {box-shadow: 1rem 0 0 transparent;} }
+
+/*============= CARDS =============*/
+.tresmaninhos {
+  display: flex;             
+  justify-content: center;   
+  align-items: center;       
+  gap: 50px;                 
+  flex-wrap: wrap;          
+  padding: 40px;             
+  width: 100%;
+}
+
+.card {
+  perspective: 1000px;
+  width: 190px;
+  height: 254px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+/* O fundo do verso e da frente receberão a cor baseada nas classes abaixo */
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-family: var(--body-font);
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.description {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 8px;
+  font-family: var(--body-font);
+}
+
+.title {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.title p { 
+  margin: 0;
+  color: white; 
+}
+
+
+/* ================= CORES DOS CARDS ================= */
+/* Definindo as cores sólidas na frente e no verso */
+
+/* Card Laranja */
+.card-orange .front, 
+.card-orange .back {
+  background-color: hsl(25, 95%, 52%); /* Laranja que você escolheu */
+}
+
+/* Card Azul */
+.card-blue .front, 
+.card-blue .back {
+  background-color: rgb(13, 93, 142); /* Azul que você escolheu */
+}
+/* ================= RESPONSIVIDADE (MOBILE) ================= */
+@media screen and (max-width: 768px) {
+  .bloco1, .bloco2 {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .zezindopente {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  .tresmaninhos {
+    gap: 30px;
+    padding: 20px 10px;
+  }
+  
+  /* Ajuste no título da máquina de escrever para não quebrar a tela no celular */
+  .amamostitulo {
+    white-space: normal;
+    animation: none;
+    width: auto;
+    box-shadow: none;
+  }
 }
