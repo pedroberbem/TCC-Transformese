@@ -90,17 +90,19 @@ body {
   text-align: center;
 }
 
+
 .amamostitulo {
   display: block;
-  font-size: clamp(1.2rem, 4vw, 2.5rem); /* Ajuste fluido para celular e PC */
+  font-size: clamp(1.2rem, 4vw, 2.5rem); 
   font-weight: 700;
-  width: 30.5ch;
+  width: 38ch; 
   overflow: hidden;
   color: #000000;
   white-space: nowrap;
-  box-shadow: 1rem 0 0 #f1e100;
-  animation: mark .5s step-end infinite alternate, write 3s steps(22,end);
+  box-shadow: 1rem 0 0 #f1e100; 
+  animation: mark .5s step-end infinite alternate, write 3s steps(38, end); 
 }
+
 
 @keyframes write { 0% {width: 0} }
 @keyframes mark { 50% {box-shadow: 1rem 0 0 transparent;} }
@@ -146,7 +148,7 @@ body {
   color: white;
 }
 
-/* O fundo do verso e da frente receberão a cor baseada nas classes abaixo */
+
 
 .back {
   display: flex;
@@ -209,21 +211,20 @@ body {
 }
 
 
-/* ================= CORES DOS CARDS ================= */
-/* Definindo as cores sólidas na frente e no verso */
 
-/* Card Laranja */
+
+
 .card-orange .front, 
 .card-orange .back {
-  background-color: hsl(25, 95%, 52%); /* Laranja que você escolheu */
+  background-color: hsl(25, 95%, 52%); 
 }
 
-/* Card Azul */
+
 .card-blue .front, 
 .card-blue .back {
   background-color: rgb(13, 93, 142); /* Azul que você escolheu */
 }
-/* ================= RESPONSIVIDADE (MOBILE) ================= */
+
 @media screen and (max-width: 768px) {
   .bloco1, .bloco2 {
     flex-direction: column;
@@ -243,7 +244,7 @@ body {
     padding: 20px 10px;
   }
   
-  /* Ajuste no título da máquina de escrever para não quebrar a tela no celular */
+  
   .amamostitulo {
     white-space: normal;
     animation: none;
