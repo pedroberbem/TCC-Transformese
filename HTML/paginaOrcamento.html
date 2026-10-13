@@ -18,7 +18,7 @@
 </head>
 
 <body>
-     <header class="header" id="header">
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="../index.html" class="nav__logo">
                 <img src="../Imagens/teste 4.png" alt=""></i>
@@ -100,44 +100,63 @@
 
     <section class="container-formulario">
 
-        <div class="lamp-wrapper">
-            <div class="lamp-cord"></div>
-            <div class="lamp-shade"></div>
-            <div class="lamp-glow"></div>
-            <div class="lamp-cone"></div>
+        <div class="orcamento-header">
+            <div class="lamp-wrapper">
+                <div class="lamp-cord"></div>
+                <div class="lamp-shade"></div>
+                <div class="lamp-glow"></div>
+                <div class="lamp-cone"></div>
+            </div>
+
+            <div class="oramento-eyebrow">
+                <p>FALE COM A RGB</p>
+            </div>
+            <h1 class="oramento-titulo">Solicite seu orçamento</h1>
+            <p class="orcamento-subtitulo">blablabala</p>
         </div>
 
+        <div class="orcamento-grid">
+            <section class="container-contato">
 
-        <section class="container-contato">
-            <h2 class="formulario-titulo">Solicitar Orçamento</h2>
-            <p class="formulario-subtitulo">Preencher os campos abaixo e entraremos em contato</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="bb0d2807-3f85-4d67-b109-12ff6352b318">
+                    <div class="grupo-formulario">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                    </div>
 
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="bb0d2807-3f85-4d67-b109-12ff6352b318">
-                <div class="grupo-formulario">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
-                </div>
+                    <div class="grupo-formulario">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                    </div>
 
-                <div class="grupo-formulario">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Digite seu email">
-                </div>
+                    <div class="grupo-formulario">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required
+                            placeholder="Digite seu telefone com DDD">
+                    </div>
 
-                <div class="grupo-formulario">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone com DDD">
-                </div>
+                    <div class="grupo-formulario">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem"
+                            placeholder="Descreva o serviço que você precisa"></textarea>
+                    </div>
 
-                <div class="grupo-formulario">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" placeholder="Descreva o serviço que você precisa"></textarea>
-                </div>
+                    <button type="submit" class="btn-form">SOLICITAR ORÇAMENTO</button>
+                </form>
+        </div>
 
-                <button type="submit" class="btn-form">SOLICITAR ORÇAMENTO</button>
-            </form>
+        <div class="container-canais">
+            <div class="orcamento-eyebrow"></div>
+            <div class="canal-item"><i class="fab fa-solid fa-phone"></i><span>telefone</span></div>
+            <div class="canal-item"><i class="fab fa-brands fa-whatsapp"></i><span>WhatsApp</span></div>
+            <div class="canal-item"><i class="fab fa-solid fa-location-dot"></i><span>endereço</span></div>
+            <div class="canal-item"><i class="fab fa-solid fa-clock"></i><span>horario de atendimento</span></div>
+            <div class="orcamento-eyebrow"></div>
+            <div class="canal-mapa"></div>
+        </div>
 
-        </section>
+    </section>
     </section>
 
     <footer class="container-footer">
@@ -210,7 +229,7 @@
     </footer>
 
     </footer>
-    
+
 
     <!-- Botão Flutuante do WhatsApp -->
     <a href="https://api.whatsapp.com/send?l=pt&phone=5511921127752" class="whatsapp_float" target="_blank"
