@@ -1,11 +1,14 @@
-.container-formulario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-    padding: 60px 20px;
-    background: radial-gradient(circle at 15% 30%, rgba(242, 110, 33, 0.45) 0%, rgb(13, 93, 142) 60%);
+.container-formulario {  
+  display: flex;
+  flex-direction: column;  /* cabeçalho em cima, grade embaixo */
+  align-items: center;
+  gap: 40px;
+  min-height: 100vh;            /* evita banner e footer aparecendo juntos */
+  padding: 120px 20px 60px;     /* o topo maior desvia do menu fixo */
+  color: #111827;
+  background: #fff;
+  justify-content: center;
+  font-size: clamp(1rem, 0.55rem + 0.55vw, 2rem)
 }
 
 /*Formulario contato*/
@@ -13,38 +16,26 @@
 .container-contato {
   flex: 0.8;
   border-radius: 16px;
-  padding: 30px;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255,255,255,0.18);
+  border: 1px solid 1px solid #e5e7eb;
   background: rgba(255,255,255,0.08);
+  position: relative;
+  z-index: 3;
 }
 
-.formulario-titulo{
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1px;
-}
-
-.formulario-subtitulo{
-    color: rgba(255,255,255,0.7);
-    font-size: 0.85rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.4;
-}
 
 .grupo-formulario{
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5em;
 }
 
 .grupo-formulario label{
     display: block;
     font-size: 0.875rem;
-    color: rgba(255,255,255,0.9);
+    color: #111827;
     margin-bottom: 6px;
     font-weight: 700;
     margin-bottom: 8px;
@@ -57,7 +48,7 @@
   outline: 2px solid #136397;
   border: 2px solid transparent;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #ffffff;
+  background-color: #f3f4f6;
   outline-offset: 4px;
   padding: 10px 1rem;
   box-sizing: border-box;
@@ -127,12 +118,16 @@
 
 /*Configurações lampada*/
 .lamp-wrapper{
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: -60px;
   width: 300px;
   height: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: scale(0.8);
+  transform-origin: top center;
 }
 
 .lamp-cord{
@@ -196,4 +191,68 @@
 .container-formulario.acesa .lamp-glow,
 .container-formulario.acesa .lamp-cone{
   animation: acender 1.5s ease-in-out forwards;
+}
+
+.orcamento-grid{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px;
+  width: min(94%, 80em);
+  margin-inline: auto;
+  align-items: stretch;
+}
+
+.container-canais{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.canal-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(14px);
+}
+
+.canal-mapa{
+  flex: 1;
+  min-height: 220px;
+  border-radius: 12px;
+  background: #e5e7eb;
+}
+
+.orcamento-header{
+  position: relative;
+  width: min(94%, 80em);
+  margin-inline: auto;
+  padding-left: 180px;
+}
+
+.orcamento-eyebrow p{
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  font-weight: 600;
+}
+
+.orcamento-titulo{
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-top: 6px;
+}
+
+.orcamento-subtitulo{
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+@media (width <= 900px){
+  .orcamento-grid{ grid-template-columns: 1fr; }
+  .orcamento-header{ padding-left: 0; }
+  .lamp-wrapper{ display: none; }
 }
