@@ -230,11 +230,11 @@
   position: relative;
   width: min(94%, 80em);
   margin-inline: auto;
-  padding-left: 180px;
+  padding-left: 230px;
 }
 
 .orcamento-eyebrow p{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   opacity: 0.75;
@@ -242,13 +242,18 @@
 }
 
 .orcamento-titulo{
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-size: clamp(2.4rem, 5vw, 5.5rem);
   margin-top: 6px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 .orcamento-subtitulo{
+  font-size: (1rem, 1.4vw, 1.6rem);
   opacity: 0.8;
-  margin-top: 6px;
+  margin-top: 0.8em;
+  max-width: 40em;
 }
 
 @media (width <= 900px){
