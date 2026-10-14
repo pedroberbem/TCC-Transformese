@@ -7,6 +7,9 @@
     color: var(--texto);
 }
 
+body {
+  background-color: #ffffff;
+}
 
 /* banner */
 .servicos-hero{
@@ -368,6 +371,25 @@
     line-height: 1.7;
 }
 
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0%;
+}
+
+.lista li{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+}
+.lista i{
+    color: var(--laranja);
+    font-size: 18px;
+    flex-shrink: 0;
+}
 /* Duas colunas em telas médias e uma em celulares */
 @media (max-width: 850px) {
     .destaques-rgb__grade {
