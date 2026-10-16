@@ -11,6 +11,10 @@ body {
   background-color: #ffffff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* banner */
 .servicos-hero{
     position: relative;
