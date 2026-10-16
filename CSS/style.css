@@ -6,7 +6,6 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(25, 95%, 52%);
   --first-color-alt: hsl(25, 95%, 48%);
   --white-color: hsl(0, 0%, 98%);
@@ -14,7 +13,6 @@
   --body-color: hsl(0, 0%, 0%);
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --second-font: "Syne", sans-serif;
   --biggest-font-size: 2.375rem;
