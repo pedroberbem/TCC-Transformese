@@ -106,6 +106,68 @@
   top: 0;
 }
 
+.nav__dropdown {
+  position: relative;
+}
+
+.dropdown__title {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+}
+
+.dropdown__icon {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  min-width: 290px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 23px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 110;
+}
+
+.nav__dropdown:hover .dropdown__menu {
+ opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav__dropdown:hover .dropdown__icon {
+  transform: rotate(180deg);
+}
+
+.dropdown__link {
+  color: #1a1a1a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.3s, padding-left 0.3s;
+  display: block;
+  text-align: left;
+}
+
+.dropdown__link:hover {
+  color: var(--first-color);
+  transform: translateX(4px);
+}
+
 /*=============== HOME ===============*/
 .home {
   position: relative;
@@ -265,4 +327,34 @@
   }
 }
 
+/*========== DROPDOWN RESPONSIVO (MOBILE) ==========*/
+@media (max-width: 1150px) {
+  /* Submenu sempre visível e integrado à gaveta */
+  .dropdown__menu {
+    position: static;
+    transform: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 0;
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    opacity: 1;
+    visibility: visible;
+  }
 
+  .dropdown__link {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .dropdown__link:hover {
+    color: var(--first-color);
+    transform: none;
+  }
+}

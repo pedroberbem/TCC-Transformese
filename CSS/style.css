@@ -1,23 +1,27 @@
-/*=============== GOOGLE FONTS ===============*/
+/*GOOGLE FONTS*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
+  /*Colors*/
   --first-color: hsl(25, 95%, 52%);
   --first-color-alt: hsl(25, 95%, 48%);
   --white-color: hsl(0, 0%, 98%);
   --black-color: hsl(0, 0%, 5%);
   --body-color: hsl(0, 0%, 0%);
+  --container-color: hsla(0, 0%, 0%, 0.4);
+  --border-color: hsla(0, 0%, 100%, 0.15);
 
-  /*========== Font and typography ==========*/
+  /*Font */
   --body-font: "Montserrat", sans-serif;
   --second-font: "Syne", sans-serif;
   --biggest-font-size: 2.375rem;
   --normal-font-size: .938rem;
 }
+
+
 
 /*========== Responsive typography ==========*/
 @media screen and (width >=1150px) {
@@ -39,6 +43,16 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--white-color);
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1rem;
 }
 
 button {
@@ -61,4 +75,3 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/

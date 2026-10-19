@@ -21,3 +21,22 @@ window.addEventListener('load', function() {
     }
   }
 });
+
+/*=============== DROPDOWN MOBILE TOGGLE ===============*/
+const dropdownItem = document.querySelector('.nav__dropdown');
+const dropdownTitle = document.querySelector('.dropdown__title');
+
+if (dropdownItem && dropdownTitle) {
+  dropdownTitle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 1150) {
+      e.preventDefault();
+      dropdownItem.classList.toggle('show-dropdown');
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1150 && dropdownItem.classList.contains('show-dropdown')) {
+      dropdownItem.classList.remove('show-dropdown');
+    }
+  });
+}

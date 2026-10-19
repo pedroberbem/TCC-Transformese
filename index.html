@@ -19,10 +19,10 @@
 </head>
 
 <body>
-    <header class="header" id="header header--escuro">
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <img src="Imagens/teste 4.png" alt=""></i>
+                <img src="Imagens/teste 4.png" alt="">
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -31,8 +31,38 @@
                         <a href="index.html" class="nav__link ">Home</a>
                     </li>
 
-                    <li>
-                        <a href="HTML/servicos.html" class="nav__link ">Nossos Serviços</a>
+                    <!--Dropdown-->
+                    <li class="nav__item nav__dropdown">
+                        <a href="HTML/servicos.html" class="nav__link dropdown__title">Nossos Serviços <i
+                                class="ri-arrow-down-s-line dropdown__icon"></i></a>
+
+                        <!--Itens do Dropdown-->
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="HTML/servicos.html#instalacoes" class="dropdown__link">Instalações e manutenções elétricas</a>
+                            </li>
+                            <li>
+                                <a href="HTML/servicos.html#iluminacao" class="dropdown__link">Instalações de iluminação</a>
+                            </li>
+                            <li>
+                                <a href="HTML/servicos.html#automacao" class="dropdown__link">Automação Residencial</a>
+                            </li>
+                            <li>
+                                <a href="HTML/servicos.html#instacaoMonitoramento" class="dropdown__link">Instalação de sistemas e Monitoramento</a>
+                            </li>
+                            <li>
+                                <a href="HTML/servicos.html#aterramento" class="dropdown__link">Aterramento elétrico</a>
+                            </li>
+                            <li>
+                                <a href="HTML/servicos.html#montagem" class="dropdown__link">Montagem e manutenção de quadros elétricos</a>
+                            </li>
+                            <li>
+                                <a href="HTML/servicos.html#allbox" class="dropdown__link">Instalação de caixa Allbox</a>
+                            </li>
+                            <li>
+                                <a href="HTML/servicos.html#allbox" class="dropdown__link">Instalações de fechaduras eletrônicas</a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li>
@@ -243,6 +273,7 @@
     <script src="JS/nav__banner.js"></script>
     <script src="JS/servicos.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
 </body>
 
 </html>
