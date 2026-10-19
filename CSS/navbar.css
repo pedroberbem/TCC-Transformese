@@ -48,6 +48,17 @@
   cursor: pointer;
 }
 
+.nav__link,
+.nav__logo span,
+.nav__logo i,
+.nav__toggle {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 2px rgba(0, 0, 0, 1);
+}
+
+.nav__logo img {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
+}
+
 /* Navigation for mobile devices */
 @media (width <=1150px) {
   .nav__menu {
@@ -109,6 +120,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: opacity 0.3s ease;
 }
 
 .home__boxes {
