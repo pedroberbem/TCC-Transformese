@@ -78,3 +78,16 @@ if (homeSection && homeBg) {
       }, 200);
    });
 }
+
+/*Sumir clicar na tela */
+const homeHint = document.getElementById('home-hint');
+const homesection = document.querySelector('.home');
+
+if (homeHint && homesection){
+   const removeHint = () => {
+      homeHint.classList.add('fade-out');
+      homesection.removeEventListener('click', removeHint);
+   };
+
+   homesection.addEventListener('click', removeHint);
+}

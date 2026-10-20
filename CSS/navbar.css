@@ -258,6 +258,41 @@
   transform: translateY(-.25rem);
 }
 
+.home__hint{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  user-select: none;
+  transition: opacity 0.5s ease, transform0.5s ease, visibility 0.5s;
+  animation: floatHint 2s infinite ease-in-out;
+}
+
+.home__hint.fade-out{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+@keyframes floatHint{
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+}
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices <> */
 @media (width >=540px) {
