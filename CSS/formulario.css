@@ -4,7 +4,9 @@
   align-items: center;
   gap: 40px;
   min-height: 100vh;            /* evita banner e footer aparecendo juntos */
-  padding: 120px 20px 60px;     /* o topo maior desvia do menu fixo */
+  padding-top: calc(var(--header-height) + 4rem); 
+  padding-bottom: 4rem;
+  padding-inline: 20px;    /* o topo maior desvia do menu fixo */
   color: #111827;
   background: #fff;
   justify-content: center;
@@ -211,12 +213,12 @@
 .canal-item{
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  border-radius: 12px;
-  background: #f3f4f6;
-  border: 1px solid rgba(255,255,255,0.18);
-  backdrop-filter: blur(14px);
+  gap: 0.8em;
+  padding: 0.9em 1.2em;
+  border-radius: 0.8em;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 3px 10px rgba(17, 24, 39, 0.05);
 }
 
 .canal-mapa{
@@ -224,6 +226,16 @@
   min-height: 220px;
   border-radius: 12px;
   background: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.canal-mapa iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .orcamento-header{
@@ -260,4 +272,27 @@
   .orcamento-grid{ grid-template-columns: 1fr; }
   .orcamento-header{ padding-left: 0; }
   .lamp-wrapper{ display: none; }
+}
+
+.canal-texto{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.canal-texto strong{
+  color: #111827;
+  font-weight: 700;
+}
+
+.canal-texto span{
+  color: #6b7280;
+  font-size: 0.9em;
+}
+
+.canal-item i{
+  color: #136397;
+  font-size: 1.4rem;
+  width: 1.6em;
+  text-align: center;
 }
